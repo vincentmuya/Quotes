@@ -1,8 +1,13 @@
 <h1><strong><em>Quotes</em></strong></h1>
 <h2>Put a  smile one someones face or inspire them with a quote</h2>
+<div class="container">
+  <div class="row">
+    <app-quote-form></app-quote-form>
+  </div>
+</div>
 <ul>
   <div *ngFor='let quote of quotes'>
-    <li>{{quote.name}}</li>
+    <li>{{quote.name}} posted on{{quote.completeDate|date}}</li>
     <app-quote-details [quote]='quote'></app-quote-details>
 </div>
 </ul>
