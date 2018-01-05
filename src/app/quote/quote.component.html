@@ -1,0 +1,8 @@
+<h1><strong><em>Quotes</em></strong></h1>
+<h2>Put a  smile one someones face or inspire them with a quote</h2>
+<ul>
+  <div *ngFor='let quote of quotes'>
+    <li>{{quote.name}}</li>
+    <app-quote-details [quote]='quote'></app-quote-details>
+</div>
+</ul>
