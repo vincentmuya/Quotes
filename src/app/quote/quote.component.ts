@@ -16,12 +16,22 @@ quotes = [
   new Quote(6,"Bernard M. Baruch", "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.", new Date(2018,1.9))
 ]
 
+
   addNewQuote(quote){
       let quoteLength = this.quotes.length;
       quote.id=quoteLength+1;
       quote.completeDate = new Date(quote.completeDate)
       this.quotes.push(quote)
 
+  }
+  deleteQuote(isComplete,index){
+    if (isComplete){
+      let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].name}`)
+
+      if(toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
   }
   constructor() { }
 

@@ -6,8 +6,9 @@
   </div>
 </div>
 <ul>
-  <div *ngFor='let quote of quotes'>
-    <li>{{quote.name}} posted on{{quote.completeDate|date}}</li>
+  <div *ngFor='let quote of quotes;let i = index'>
+    <li id="{{i}}">{{quote.name}} posted on{{quote.completeDate|date}}</li>
     <app-quote-details [quote]='quote'></app-quote-details>
+    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deletequote($event,i)'></app-quote-details>
 </div>
 </ul>
