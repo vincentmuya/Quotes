@@ -15,6 +15,14 @@ quotes = [
   new Quote(5,"Marcus Tullius Cicero", "A room without books is like a body without a soul.",new Date(2018,1.7)),
   new Quote(6,"Bernard M. Baruch", "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.", new Date(2018,1.9))
 ]
+
+  addNewQuote(quote){
+      let quoteLength = this.quotes.length;
+      quote.id=quoteLength+1;
+      quote.completeDate = new Date(quote.completeDate)
+      this.quotes.push(quote)
+
+  }
   constructor() { }
 
   ngOnInit() {
