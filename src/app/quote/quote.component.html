@@ -1,14 +1,14 @@
-
-<h2>Put a  smile one someones face or inspire them with a quote</h2>
+<h2>Keep the soul alive with some inspirational quotes</h2>
 <div class="container">
   <div class="row">
     <app-quote-form (addQuote) ="addNewQuote($event)"></app-quote-form>
   </div>
 </div>
+
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
     <li id="{{i}}">{{quote.name}} posted on{{quote.completeDate|date}}</li>
     <app-quote-details [quote]='quote'></app-quote-details>
-    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deletequote($event,i)'></app-quote-details>
+    <app-quote-details *ngIf="quote.showDescription" ></app-quote-details>
 </div>
 </ul>
