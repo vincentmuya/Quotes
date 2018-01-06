@@ -6,12 +6,12 @@ import { Quote } from '../quote'
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-@Input()quote:Quote
-@Output()isComplete= new EventEmitter<boolean>()
+@Input() quote:Quote;
+@Output() isComplete= new EventEmitter<boolean>();
 
-quoteDelete(complete:boolean){
-  this.isComplete.emit(complete);
-}
+ quoteDelete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
   constructor() { }
 
   ngOnInit() {
