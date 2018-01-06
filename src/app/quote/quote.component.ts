@@ -6,8 +6,7 @@ import { Quote } from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-
-quotes = [
+    quotes = [
   new Quote(1,"Dr. Seuss","Don't cry because it's over, smile because it happened.", new Date(2017,11,15)),
   new Quote(2,"Oscar Wilde", "Be yourself; everyone else is already taken.", new Date(2018,1.1)),
   new Quote(3," Marilyn Monroe", "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.", new Date(2018,1,3)),
