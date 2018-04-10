@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-{Its a web application that allows useres to read,poast and delete quotes }
+{Its a web application that allows useres to read,poast,rate and delete quotes }
 
 ## Development server
 
@@ -18,7 +18,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Known Bugs
 
-{An issue with deleting a quote }
+{ 0 }
 
 ## Technologies Used
 
